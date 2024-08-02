@@ -13,8 +13,8 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <a class="navbar-brand m-0" href="#">
+            <div class="container-fluid header-navbar-container">
+                <a class="navbar-brand m-0 logo-container" href="#">
                     <img src="./assets/logo_speciale redim.png" alt="logo" style="height: 80px;">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -22,20 +22,20 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
+                    <ul class="navbar-nav header-nav-items">
+                        <li class="nav-item header-nav-item">
                             <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item header-nav-item">
                             <a class="nav-link" href="./pages/menu.html">Menu</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Sobre Nosotros</a>
+                        <li class="nav-item header-nav-item">
+                            <a class="nav-link" href="#nosotros">Sobre Nosotros</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Nuestras Especialidades</a>
+                        <li class="nav-item header-nav-item">
+                            <a class="nav-link" href="#especialidades">Nuestras Especialidades</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item header-nav-item">
                             <a class="nav-link" href="./pages/galeria.html">Galeria</a>
                         </li>
                     </ul>
@@ -46,7 +46,7 @@
                     </div>
                     <div class="container botones-bienvenidos-container mt-4">
                         <a href="#" class="btn btn-success p-2">RESERVAR UNA MESA</a>
-                        <a href="#" class="btn btn-danger p-2">VER MENU</a>
+                        <a href="./pages/menu.html" class="btn btn-danger p-2">VER MENU</a>
                     </div>
                 </div>
             </div>
@@ -54,7 +54,7 @@
     </header>
 
     <main>
-        <section class="container nosotros-container">
+        <section id="nosotros" class="container nosotros-container">
             <article id="container sobre-nosotros-container">
                 <h1 class="titulo-nosotros">Sobre Nosotros</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti laudantium necessitatibus possimus
@@ -66,8 +66,11 @@
 
         <section id="especialidades" class="container especialidades-container">
             <h1 class="titulo-especialidades">Nuestras Especialidades</h1>
-            <div class="container pastas-especialidades-container">
-                <img src="./assets/pastas especialidades.png" class="comidas-img" alt="Pastas">
+
+            <div class="container comidas-especialidades-container">
+                <div class="container img-comidas-container">
+                    <img src="./assets/pastas especialidades.png" class="comidas-img" alt="Pastas">
+                </div>
                 <div class="container texto-especialidades">
                     <h2 class="titulo-comidas-especialidades">Pastas</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium a dolores magni debitis
@@ -76,18 +79,22 @@
                     </p>
                 </div>
             </div>
-            <div class="container pizzas-especialidades-container">
-                <img src="./assets/pizzas especialidades.png" class="comidas-img" alt="Pizzas">
-                <div class="container texto-especialidades">
-                    <h2 class="titulo-comidas-especialidades">Pizzas</h2>
+            <div class="container comidas-especialidades-container invertido">
+                <div class="container img-comidas-container">
+                    <img src="./assets/pizzas especialidades.png" class="comidas-img" alt="Pizzas">
+                </div>
+                <div class="container texto-especialidades-invertido">
+                    <h2 class="titulo-comidas-especialidades-invertido">Pizzas</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi tempore delectus esse
                         impedit, ducimus blanditiis accusamus est officiis dolorem quo dicta quaerat molestiae minus
                         numquam eos, non cupiditate magni nihil.
                     </p>
                 </div>
             </div>
-            <div class="container ensaladas-especialidades-container">
-                <img src="./assets/ensaladas especialidades.png" class="comidas-img" alt="Ensaladas">
+            <div class="container comidas-especialidades-container ">
+                <div class="container img-comidas-container">
+                    <img src="./assets/ensaladas especialidades.png" class="comidas-img" alt="Ensaladas">
+                </div>
                 <div class="container texto-especialidades">
                     <h2 class="titulo-comidas-especialidades">Ensaladas</h2>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores quis sapiente, nostrum
@@ -96,7 +103,49 @@
                 </div>
             </div>
         </section>
+
+        <article class="calidad-container d-flex flex-column justify-content-center align-items-center">
+            <h5 class="titulo-calidad">Calidad superior en cada grano</h5>
+            <p>En nuestra cocina, solo utilizamos harina de primera calidad para garantizar que
+                cada uno de nuestros productos sea excepcional. Nos enorgullecemos de seleccionar cuidadosamente
+                nuestras materias
+                primas, asegurando que la harina que empleamos cumpla con los más altos estándares de pureza y
+                frescura.</p>
+        </article>
     </main>
+
+    <footer class="bg-success-subtle">
+        <div class="container m-4 footer-container">
+            <a class="navbar-brand m-0 logo-container" href="#">
+                <img src="./assets/logo_speciale redim.png" alt="logo" style="height: 120px;">
+            </a>
+            <nav class="navbar footer-navbar-container">
+                <ul class="navbar-nav footer-nav-items">
+                    <li class="nav-item">
+                        <a class="nav-link footer-nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link footer-nav-link" href="./pages/menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link footer-nav-link" href="#nosotros">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link footer-nav-link" href="#especialidades">Nuestras Especialidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link footer-nav-link" href="./pages/galeria.html">Galeria</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class=" contacto-container">
+                    <h1 class="titulo-contacto">Contacto</h1>
+                    <h2>+11111111</h2>
+                    <h2>lorem@mail.com</h2>
+            </div>
+        </div>
+        <h1 class="derechos">Todos los derechos reservados @2024</h1>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

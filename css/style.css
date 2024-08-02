@@ -17,21 +17,21 @@ header {
     position: relative;
     text-align: center;
     padding: 20px;
-    height: 700px;
+    height: 800px;
 }
 
-.container-fluid {
+.header-navbar-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.navbar-nav {
+.header-nav-items {
     margin: 0 auto;
 }
 
-.navbar-brand {
+.logo-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,7 +41,7 @@ header {
     justify-content: center;
 }
 
-.navbar-nav .nav-link {
+.header-nav-items .nav-link {
     color: #c6c6c6;
     font-family: 'SoDo Sans';
 }
@@ -50,7 +50,7 @@ header {
     color: white;
 }
 
-.navbar-nav .nav-link:hover {
+.header-nav-items .nav-link:hover {
     color: white;
 }
 
@@ -115,7 +115,11 @@ main {
     color: white;
 }
 
-.titulo-especialidades{
+.especialidades-container {
+    margin-bottom: 60px;
+}
+
+.titulo-especialidades {
     font-family: "Parisienne", cursive;
     font-weight: 400;
     font-style: normal;
@@ -125,24 +129,189 @@ main {
     text-align: center;
 }
 
-.comidas-img{
+.comidas-especialidades-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.invertido {
+    display: flex;
+    flex-direction: row-reverse column;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-comidas-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 300px;
+}
+
+.comidas-img {
+    max-width: 100%;
+    height: auto;
+    width: 300px;
+}
+
+.texto-especialidades {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.texto-especialidades-invertido {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.titulo-comidas-especialidades {
+    font-family: "Parisienne", cursive;
+    font-size: 40px;
+}
+
+.titulo-comidas-especialidades-invertido {
+    font-family: "Parisienne", cursive;
+    font-size: 40px;
+}
+
+.texto-especialidades-invertido p {
+    font-family: 'SoDo Sans';
+}
+
+.texto-especialidades p {
+    font-family: 'SoDo Sans';
+}
+
+.calidad-container {
+    background-image: url(../assets/harina.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    margin-top: 60px;
+}
+
+.titulo-calidad {
+    font-family: "Parisienne", cursive;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    padding: 10px 30px;
+}
+
+.calidad-container p {
+    font-family: 'SoDo Sans';
+    text-align: center;
+    padding: 10px 30px;
+    color: white;
+}
+
+/*footer index*/
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 500px;
+}
+
+.footer-nav-items .footer-nav-link {
+    color: #000000;
+    font-family: 'SoDo Sans';
+}
+
+.titulo-contacto {
+    font-family: 'SoDo Sans';
+    font-size: 25px;
+}
+
+.contacto-container h2{
+    font-family: 'SoDo Sans';
+    font-size: 16px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.derechos{
+    font-size: 10px;
+    font-family: 'SoDo Sans';
 }
 
 @media (min-width: 768px) {
     .titulo-nosotros {
         font-size: 80px;
     }
-}
 
-@media (min-width: 768px) {
     .titulo-especialidades {
         font-size: 80px;
     }
-}
 
-@media (min-width: 768px) {
     .titulo-bienvenidos {
         font-size: 100px;
     }
+}
+
+@media (min-width: 1200px) {
+    .texto-especialidades {
+        position: relative;
+        right: 10%;
+    }
+
+    .texto-especialidades-invertido {
+        position: relative;
+        left: 13%;
+    }
+}
+
+@media (min-width: 576px) {
+
+    .comidas-especialidades-container {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 30px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .invertido {
+        flex-direction: row-reverse;
+    }
+
+    .texto-especialidades {
+        text-align: start;
+    }
+
+    .texto-especialidades-invertido {
+        text-align: start;
+    }
+
+    .titulo-comidas-especialidades-invertido {
+        text-align: end;
+        margin-right: 30px;
+    }
+
+    .titulo-calidad {
+        font-size: 80px;
+        padding: 10px 40px;
+    }
+
+    .calidad-container p {
+        font-size: 25px;
+        padding: 10px 40px;
+    }
+
+    .footer-container{
+        flex-direction: row;
+        height: 300px;
+    }
+    
 }
