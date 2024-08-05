@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
-@import url(https://db.onlinewebfonts.com/c/d7e8a95865396cddca89b00080d2cba6?family=SoDo+Sans+SemiBold);
+
+@font-face {
+    font-family: 'SoDo Sans';
+    src: local('SoDo Sans'), local('SoDo Sans'),
+        url(../assets/SoDoSans-Regular.woff2) format('woff2'),
+        url('../assets/SoDoSans-Regular.woff') format('woff'),
+        url('../assets/SoDoSans-Regular.ttf') format('truetype');
+}
 
 * {
     margin: 0px;
@@ -54,21 +61,21 @@ header {
     color: white;
 }
 
-.bienvenidos-container {
+.banner-container {
     display: flex;
     flex-direction: column;
     margin: 60px;
     align-items: center;
 }
 
-.botones-bienvenidos-container {
+.botones-banner-container {
     display: flex;
     justify-content: center;
     font-family: 'SoDo Sans';
     padding: 20px;
 }
 
-.botones-bienvenidos-container a {
+.botones-banner-container a {
     margin: 10px;
 }
 
@@ -209,7 +216,7 @@ main {
     color: white;
 }
 
-/*footer index*/
+/*footer*/
 
 .footer-container {
     display: flex;
@@ -229,20 +236,86 @@ main {
     font-size: 25px;
 }
 
-.contacto-container h2{
+.contacto-container h2 {
     font-family: 'SoDo Sans';
     font-size: 16px;
 }
 
-footer{
+footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.derechos{
+.derechos {
     font-size: 10px;
+    font-family: 'SoDo Sans';
+}
+
+/*header menu*/
+
+.header-menu {
+    background-image: url(../assets/menu.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    height: 500px;
+}
+
+.titulo-menu {
+    font-family: "Parisienne", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: white;
+}
+
+/*main menu*/
+.texto-comidas-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.titulo-comidas-menu {
+    font-family: "Parisienne", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+}
+
+.subtitulo-comidas-menu {
+    font-family: "Parisienne", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.col {
+    display: flex;
+    justify-content: center;
+
+}
+
+.card.comidas-container {
+    border-color: #3C582B;
+}
+
+.texto-comidas {
+    text-align: center;
+}
+
+.titulo-comidas {
+    font-family: 'SoDo Sans';
+}
+
+.info-comidas {
     font-family: 'SoDo Sans';
 }
 
@@ -256,6 +329,10 @@ footer{
     }
 
     .titulo-bienvenidos {
+        font-size: 100px;
+    }
+
+    .titulo-menu {
         font-size: 100px;
     }
 }
@@ -309,9 +386,16 @@ footer{
         padding: 10px 40px;
     }
 
-    .footer-container{
+    .footer-container {
         flex-direction: row;
         height: 300px;
     }
-    
+
+    .titulo-comidas-menu {
+        font-size: 80px;
+    }
+
+    .subtitulo-comidas-menu {
+        font-size: 30px;
+    }
 }
