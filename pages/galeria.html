@@ -4,57 +4,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <title>Speciale | Galeria</title>
 </head>
 
 <body>
     <header class="header-galeria">
-        <div class="header-contenedor">
-            <img src="../assets/logo_speciale.png" class="logo" alt="logo">
-            <button class="btn">RESERVAS</button>
-        </div>
-        <nav class="navbar">
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../pages/menu.html">Menu</a></li>
-                <li><a href="../index.html#nosotros">Nosotros</a></li>
-                <li><a href="../index.html#comidas">Nuestras Especialidades</a></li>
-                <li><a href="#">Galeria</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+            <div class="container-fluid header-navbar-container">
+                <a class="navbar-brand m-0 logo-container" href="../index.html">
+                    <img src="../assets/logo_speciale redim.png" alt="logo" style="height: 80px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav header-nav-items">
+                        <li class="nav-item header-nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item header-nav-item">
+                            <a class="nav-link" href="./menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item header-nav-item">
+                            <a class="nav-link" href="../index.html#nosotros">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item header-nav-item">
+                            <a class="nav-link" href="../index.html#especialidades">Nuestras Especialidades</a>
+                        </li>
+                        <li class="nav-item header-nav-item">
+                            <a class="nav-link active text-light" href="#">Galeria</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="container banner-container">
+                    <div class="container titulo-banner-container">
+                        <h1 class="titulo-inicio">Galeria</h1>
+                    </div>
+                </div>
+            </div>
         </nav>
-
-        <article class="banner-galeria">
-            <h1>Galeria</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, corrupti? Excepturi, placeat
-                molestias
-                voluptatibus ut vero vel iusto amet expedita recusandae? Debitis quas nemo minus impedit eius provident!
-                Ratione, aperiam.</p>
-        </article>
     </header>
+
     <main>
-        <section class="contenedor-imagenes1">
-            <article class="contenido-img1">
-                <img src="../assets/pizza pollo.jpg" class="img-galeria" alt="pizza pollo">
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
-            </article>
-            <article class="contenido-img2">
-                <img src="../assets/slice-cut-from-classic-pepperoni-pizza-with-green-pepper-rolls (1) (1).jpg" class="img-galeria" alt="pizza porcion">
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
-            </article>
-            <article class="contenido-img3">
-                <img src="../assets/ensalada cesar.jpg" class="img-galeria" alt="ensalada cesar">
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
-            </article>
+        <section class="container primera-seccion ">
+            <div class="container row row-cols-1 row-cols-lg-3 py-5 contenedor-imagenes1">
+                <div class="col contenedor-seccion-img">
+                    <div class="card no-border-card imagen1-card p-0 m-2">
+                        <img src="../assets/pizza vegetales.jpg" class="card-img-top" alt="pizza vegetales">
+                        <div class="card-body">
+                            <p class="card-text info-img">"Deliciosa pizza de vegetales frescos y sabrosos."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col contenedor-seccion-img">
+                    <div class="card no-border-card imagen1-card p-0 m-2">
+                        <img src="../assets/slice-cut-from-classic-pepperoni-pizza-with-green-pepper-rolls (1) (1).jpg"
+                            class="card-img-top" alt="pizza peperoni">
+                        <div class="card-body">
+                            <p class="card-text info-img">"La inigualable pizza de pepperoni, un clásico irresistible."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col contenedor-seccion-img">
+                    <div class="card no-border-card imagen1-card p-0 m-2">
+                        <img src="../assets/ensalada cesar.jpg" class="card-img-top" alt="ensalada cesar">
+                        <div class="card-body">
+                            <p class="card-text info-img">"Ensalada César fresca y crujiente, perfecta para acompañar."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section class="contenedor-carrousel">
-            <img src="../assets/carrousel1.jpg" class="carrousel-imagen" alt="cocinera">
-            <img src="../assets/carrousel2.jpg" class="carrousel-imagen" alt="pastas">
-            <img src="../assets/carrousel3.jpg" class="carrousel-imagen" alt="pastas huevos">
-        </section>
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner imagenes-carrousel">
+                <div class="carousel-item active">
+                    <img src="../assets/carrousel1.jpeg" class="d-block w-100" alt="cocinera">
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/carrousel2.jpeg" class="d-block w-100" alt="pastas">
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/carrousel3.jpeg" class="d-block w-100" alt="huevos">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
 
-        <article class="frase-galeria">
+        <article class="container frase-galeria">
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione molestiae rerum praesentium, porro
                 minima,
                 ut dolore similique iure iusto labore cumque voluptate omnis pariatur ullam neque? Optio cupiditate
@@ -62,38 +112,69 @@
                 necessitatibus?</p>
         </article>
 
-        <section class="contenedor-imagenes2">
-            <article class="contenido-img4">
-                <img src="../assets/pizzaseccion2.jpg" class="img-galeria2" alt="pizza porcion margarita">
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
-            </article>
-            <article class="contenido-img5">
-                <img src="../assets/pizza2seccion2.jpg" class="img-galeria2" alt="pizza porcion fugazetta">
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
-            </article>
+        <section class="container segunda-seccion d-flex justify-content-center align-items-center">
+            <div class="container row row-cols-1 row-cols-lg-3 py-5 contenedor-imagenes2">
+                <div class="col contenedor-seccion2-img">
+                    <div class="card no-border-card imagen2-card p-0 m-2">
+                        <img src="../assets/pizzaseccion2.jpg" class="card-img-top" alt="">
+                    </div>
+                </div>
+                <div class="col contenedor-seccion2-img">
+                    <div class="card no-border-card imagen2-card p-0 m-2">
+                        <img src="../assets/pizza2seccion2.jpg" class="card-img-top" alt="">
+                    </div>
+                </div>
+                <div class="col contenedor-seccion2-img">
+                    <div class="card no-border-card imagen2-card p-0 m-2">
+                        <img src="../assets/pastaseccion2.jpeg" class="card-img-top" alt="">
+                    </div>
+                </div>
+                <div class="col contenedor-seccion2-img">
+                    <div class="card no-border-card imagen2-card p-0 m-2">
+                        <img src="../assets/pasta2seccion2.jpeg" class="card-img-top" alt="">
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
-    <footer>
-        <div class="footer-logo">
-            <img src="../assets/logo_speciale.png" alt="logo">
-        </div>
-        <nav class="footer-navbar">
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="./pages/menu.html">Menu</a></li>
-                <li><a href="../index.html#nosotros">Nosotros</a></li>
-                <li><a href="../index.html#comidas">Nuestras Especialidades</a></li>
-                <li><a href="#">Galeria</a></li>
-            </ul>
-        </nav>
-        <div class="contenedor-contacto-redes">
-            <div class="contacto">
-                <h1>Contacto</h1>
+    
+    <footer class="bg-success-subtle">
+        <div class="container m-4 footer-container">
+            <a class="navbar-brand m-0 logo-container" href="../index.html">
+                <img src="../assets/logo_speciale redim.png" alt="logo" style="height: 120px;">
+            </a>
+            <nav class="navbar footer-navbar-container">
+                <ul class="navbar-nav footer-nav-items">
+                    <li class="nav-item">
+                        <a class="nav-link footer-nav-link" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link footer-nav-link" href="./menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link footer-nav-link" href="../index.html#nosotros">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link footer-nav-link" href="../index.html#especialidades">Nuestras
+                            Especialidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link footer-nav-link" href="#">Galeria</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class=" contacto-container">
+                <h1 class="titulo-contacto">Contacto</h1>
                 <h2>+11111111</h2>
                 <h2>lorem@mail.com</h2>
             </div>
         </div>
+        <h1 class="derechos">Todos los derechos reservados @2024</h1>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
