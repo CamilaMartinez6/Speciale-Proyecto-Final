@@ -87,13 +87,12 @@ main {
 }
 
 .nosotros-container {
-    margin: 30px;
     padding: 30px;
 }
 
 .nosotros-container p {
     font-family: 'SoDo Sans';
-    margin-left: 60px;
+    margin-left: 32px;
 }
 
 .titulo-nosotros {
@@ -110,7 +109,7 @@ main {
 }
 
 .btn-success {
-    margin-left: 60px;
+    margin-left: 32px;
     font-family: 'SoDo Sans';
 }
 
@@ -376,12 +375,12 @@ footer {
 @media (min-width: 1200px) {
     .texto-especialidades {
         position: relative;
-        right: 10%;
+        left: 2%;
     }
 
     .texto-especialidades-invertido {
         position: relative;
-        left: 13%;
+        right: 2%;
     }
 }
 
