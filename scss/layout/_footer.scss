@@ -1,0 +1,36 @@
+@import '../config/vars';
+@import '../config/mixins';
+
+/*footer*/
+
+footer {
+    @include flex-justify-align($f-direction: column, $justify-cnt: center, $align-itm: center);
+
+    .footer-container {
+        @include flex-justify-align($f-direction: column, $justify-cnt: space-between, $align-itm: center);
+        height: $height-footer;
+
+        .footer-nav-items {
+            @include footer-items-style;
+
+            .footer-nav-link {
+                @include footer-items-style;
+            }
+        }
+
+        .titulo-contacto {
+            font-family: $font-primary;
+            font-size: map-get($font-sizes, large);
+        }
+
+        .contacto-container h2 {
+            font-family: $font-primary;
+            font-size: map-get($font-sizes, medium);
+        }
+    }
+
+    .derechos {
+        font-size: map-get($font-sizes, small);
+        font-family: $font-primary;
+    }
+}

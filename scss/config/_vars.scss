@@ -1,0 +1,50 @@
+//texto
+$font-primary: 'SoDo Sans';
+$font-secondary: "Parisienne", cursive;
+$font-sizes: (
+    small: 10px,
+    medium: 16px,
+    large: 25px,
+    titulo-medium: 40px,
+    titulo-large: 50px,
+    desktop-small: 30px,
+    desktop-large: 100px,
+    desktop-medium: 80px
+);
+
+$font-weight-titulos: 400;
+$font-style-default: normal;
+
+//colores
+$blanco-hueso: #c6c6c6;
+$blanco: white;
+$negro: black;
+$verde-oscuro: #3C582B;
+$verde-claro: #709e53;
+$rojo-oscuro: #511313;
+$rojo-claro: #862727;
+$transparente: transparent;
+
+//espaciado
+
+$margin-btn: 10px;
+
+//anchos
+$width-img-comidas: 300px;
+
+//altos
+$height-footer: 500px;
+//header image variables
+$image-header-index: url(../assets/reservas\ oscuro.png);
+$image-header-menu: url(../assets/menu.png);
+$image-header-galeria: url(../assets/galeria.png);
+
+//header alturas variables
+$height-header-index: 800px;
+$height-header-menu-galeria: 500px;
+
+//main imagen de fondo
+$main-bg-image: url(../assets/fondo\ especias.png);
+
+//index main container img
+$image-calidad-index: url(../assets/harina.png);

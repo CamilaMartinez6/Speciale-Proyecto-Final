@@ -1,0 +1,27 @@
+//CONFIG
+
+//Tipografias
+@import './config/tipografia';
+//Reset
+@import './config/reset';
+//Variables
+@import './config/vars';
+//mixins
+@import './config/mixins.scss';
+
+//LAYOUT/
+//Header
+@import './layout/header';
+//Main
+@import './layout/main';
+
+//PAGES
+@import './pages/index';
+@import './pages/menu';
+@import './pages/galeria';
+
+//footer
+@import './layout/footer';
+
+//media queries
+@import './config/mediaqueries';

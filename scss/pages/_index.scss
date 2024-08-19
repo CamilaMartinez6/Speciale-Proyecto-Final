@@ -1,0 +1,122 @@
+@import '../config/vars';
+
+.page-index {
+    header {
+        background-image: $image-header-index;
+        height: $height-header-index;
+    }
+}
+
+/*main index*/
+.nosotros-container {
+    padding: 30px;
+
+    .titulo-nosotros {
+        @include titulos-style;
+        color: $negro;
+        padding: 30px;
+    }
+
+    & p {
+        font-family: $font-primary;
+        margin-left: 32px;
+    }
+
+    .btn-leermas {
+        @include btn-style($blanco, $verde-oscuro);
+        margin-left: 32px;
+        font-family: $font-primary;
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: scale(1.1);
+            background-color: $verde-claro;
+            color: $negro;
+        }
+    }
+
+}
+
+.especialidades-container {
+    margin-bottom: 60px;
+
+    .titulo-especialidades {
+        @include titulos-style;
+        color: $negro;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .comidas-especialidades-container {
+        @include flex-justify-align($f-direction: column, $justify-cnt: center, $align-itm: center);
+        margin-bottom: 30px;
+
+        .img-comidas-container {
+            @include flex-justify-align($justify-cnt: center, $align-itm: center);
+            width: $width-img-comidas;
+
+            .comidas-img {
+                max-width: 100%;
+                height: auto;
+                width: $width-img-comidas;
+                transition: transform 0.3s ease;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+        .texto-especialidades {
+            text-align: center;
+            margin-top: 20px;
+
+            .titulo-comidas-especialidades {
+                @include titulo-comidas-style;
+            }
+
+            & p {
+                font-family: $font-primary;
+            }
+        }
+    }
+
+    .invertido {
+        @include flex-justify-align($f-direction: row-reverse column, $justify-cnt: center, $align-itm: center);
+
+        .texto-especialidades-invertido {
+            text-align: center;
+            margin-top: 20px;
+
+            .titulo-comidas-especialidades-invertido {
+                @include titulo-comidas-style;
+            }
+
+            & p {
+                font-family: $font-primary;
+            }
+        }
+    }
+}
+
+.calidad-container {
+    background-image: $image-calidad-index;
+    @include bg-cover-center;
+    height: 500px;
+    margin-top: 60px;
+
+    .titulo-calidad {
+        font-family: $font-secondary;
+        font-size: map-get($font-sizes, titulo-large);
+        color: $blanco;
+        text-align: center;
+        @include padding(10px, 30px);
+    }
+
+    & p {
+        font-family: $font-primary;
+        text-align: center;
+        @include padding(10px, 30px);
+        color: $blanco;
+    }
+}

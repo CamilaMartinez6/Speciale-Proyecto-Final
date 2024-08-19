@@ -1,0 +1,35 @@
+@import '../config/vars';
+@import '../config/mixins';
+
+/*header-menu*/
+.page-menu {
+    header {
+        background-image: $image-header-menu;
+        height: $height-header-menu-galeria;
+    }
+}
+
+/*main menu*/
+.texto-comidas-container{
+    @include flex-justify-align($f-direction: column, $justify-cnt:center, $align-itm:center);
+    margin-top: 50px;
+    .titulo-comidas-menu{
+        @include titulos-style;
+    }
+    .subtitulo-comidas-menu{
+        @include subtitulos-style;
+    }
+}
+
+.col{
+    @include flex-justify-align($justify-cnt: center);
+    .comidas-container{
+        border-color: $verde-oscuro;
+        .texto-comidas{
+            text-align: center;
+            .titulo-comidas, .info-comidas{
+                font-family: $font-primary;
+            }
+        }
+    }
+}

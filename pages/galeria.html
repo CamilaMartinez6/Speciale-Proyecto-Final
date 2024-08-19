@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/main.css">
     <title>Speciale | Galeria</title>
 </head>
 
-<body>
+<body class="page-galeria">
     <header class="header-galeria">
         <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
             <div class="container-fluid header-navbar-container">
@@ -30,7 +31,7 @@
                             <a class="nav-link" href="./menu.html">Menu</a>
                         </li>
                         <li class="nav-item header-nav-item">
-                            <a class="nav-link" href="../index.html#nosotros">Sobre Nosotros</a>
+                            <a class="nav-link" href="../index.html#nosotros">Nosotros</a>
                         </li>
                         <li class="nav-item header-nav-item">
                             <a class="nav-link" href="../index.html#especialidades">Nuestras Especialidades</a>
@@ -53,7 +54,7 @@
         <section class="container primera-seccion ">
             <div class="container row row-cols-1 row-cols-lg-3 py-5 contenedor-imagenes1">
                 <div class="col contenedor-seccion-img">
-                    <div class="card no-border-card imagen1-card p-0 m-2">
+                    <div class="card no-border-card imagen1-card p-0 m-2" data-aos="zoom-in">
                         <img src="../assets/pizza vegetales.jpg" class="card-img-top" alt="pizza vegetales">
                         <div class="card-body">
                             <p class="card-text info-img">"Deliciosa pizza de vegetales frescos y sabrosos."</p>
@@ -61,19 +62,21 @@
                     </div>
                 </div>
                 <div class="col contenedor-seccion-img">
-                    <div class="card no-border-card imagen1-card p-0 m-2">
+                    <div class="card no-border-card imagen1-card p-0 m-2" data-aos="zoom-in">
                         <img src="../assets/slice-cut-from-classic-pepperoni-pizza-with-green-pepper-rolls (1) (1).jpg"
                             class="card-img-top" alt="pizza peperoni">
                         <div class="card-body">
-                            <p class="card-text info-img">"La inigualable pizza de pepperoni, un clásico irresistible."</p>
+                            <p class="card-text info-img">"La inigualable pizza de pepperoni, un clásico irresistible."
+                            </p>
                         </div>
                     </div>
                 </div>
                 <div class="col contenedor-seccion-img">
-                    <div class="card no-border-card imagen1-card p-0 m-2">
+                    <div class="card no-border-card imagen1-card p-0 m-2" data-aos="zoom-in">
                         <img src="../assets/ensalada cesar.jpg" class="card-img-top" alt="ensalada cesar">
                         <div class="card-body">
-                            <p class="card-text info-img">"Ensalada César fresca y crujiente, perfecta para acompañar."</p>
+                            <p class="card-text info-img">"Ensalada César fresca y crujiente, perfecta para acompañar."
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -115,29 +118,29 @@
         <section class="container segunda-seccion d-flex justify-content-center align-items-center">
             <div class="container row row-cols-1 row-cols-lg-3 py-5 contenedor-imagenes2">
                 <div class="col contenedor-seccion2-img">
-                    <div class="card no-border-card imagen2-card p-0 m-2">
+                    <div class="card no-border-card imagen2-card p-0 m-2" data-aos="zoom-in">
                         <img src="../assets/pizzaseccion2.jpg" class="card-img-top" alt="">
                     </div>
                 </div>
                 <div class="col contenedor-seccion2-img">
-                    <div class="card no-border-card imagen2-card p-0 m-2">
+                    <div class="card no-border-card imagen2-card p-0 m-2" data-aos="zoom-in">
                         <img src="../assets/pizza2seccion2.jpg" class="card-img-top" alt="">
                     </div>
                 </div>
                 <div class="col contenedor-seccion2-img">
-                    <div class="card no-border-card imagen2-card p-0 m-2">
+                    <div class="card no-border-card imagen2-card p-0 m-2" data-aos="zoom-in">
                         <img src="../assets/pastaseccion2.jpeg" class="card-img-top" alt="">
                     </div>
                 </div>
                 <div class="col contenedor-seccion2-img">
-                    <div class="card no-border-card imagen2-card p-0 m-2">
+                    <div class="card no-border-card imagen2-card p-0 m-2" data-aos="zoom-in">
                         <img src="../assets/pasta2seccion2.jpeg" class="card-img-top" alt="">
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    
+
     <footer class="bg-success-subtle">
         <div class="container m-4 footer-container">
             <a class="navbar-brand m-0 logo-container" href="../index.html">
@@ -175,6 +178,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

@@ -53,10 +53,6 @@ header {
     font-family: 'SoDo Sans';
 }
 
-.nav-link active {
-    color: white;
-}
-
 .header-nav-items .nav-link:hover {
     color: white;
 }
@@ -66,6 +62,14 @@ header {
     flex-direction: column;
     margin-top: 60px;
     align-items: center;
+}
+
+.titulo-inicio {
+    font-family: "Parisienne", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: white;
 }
 
 .botones-banner-container {
@@ -111,14 +115,6 @@ main {
 .btn-success {
     margin-left: 32px;
     font-family: 'SoDo Sans';
-}
-
-.titulo-inicio {
-    font-family: "Parisienne", cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 40px;
-    color: white;
 }
 
 .especialidades-container {
@@ -301,7 +297,9 @@ footer {
     text-align: center;
 }
 
-.info-comidas, .info-img, .titulo-comidas {
+.info-comidas,
+.info-img,
+.titulo-comidas {
     font-family: 'SoDo Sans';
 }
 
@@ -318,7 +316,8 @@ footer {
     height: 500px;
 }
 
-.contenedor-imagenes1, .primera-seccion {
+.contenedor-imagenes1,
+.primera-seccion {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -358,6 +357,7 @@ footer {
     text-align: center;
 }
 
+/*media queries*/
 @media (min-width: 768px) {
     .titulo-nosotros {
         font-size: 80px;

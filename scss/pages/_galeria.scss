@@ -1,0 +1,47 @@
+@import '../config/vars';
+@import '../config/mixins';
+
+/*header galeria*/
+.page-galeria {
+    header {
+        background-image: $image-header-galeria;
+        height: $height-header-menu-galeria;
+    }
+}
+
+/*main galeria*/
+.primera-seccion {
+    @include flex-justify-align($justify-cnt: center, $align-itm: center);
+
+    .contenedor-imagenes1 {
+        @include flex-justify-align($justify-cnt: center, $align-itm: center);
+
+        .contenedor-seccion-img {
+            width: 26rem;
+
+            .no-border-card {
+                border: none;
+                border-radius: 0%;
+                background-color: $transparente;
+
+                .info-img {
+                    font-family: $font-primary;
+                }
+            }
+        }
+    }
+}
+
+.contenedor-imagenes2 {
+    @include flex-justify-align($f-direction: row, $justify-cnt: center, $align-itm: center);
+
+    .contenedor-seccion2-img {
+        width: 38rem;
+    }
+}
+
+.frase-galeria {
+    @include subtitulos-style;
+    margin-top: 60px;
+    text-align: center;
+}

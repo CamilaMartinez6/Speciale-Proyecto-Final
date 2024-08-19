@@ -1,0 +1,102 @@
+@import '../config/vars';
+@import'../config/mixins';
+
+@media (min-width: 768px) {
+    .nosotros-container {
+        .titulo-nosotros {
+            font-size: map-get($font-sizes, desktop-medium);
+        }
+    }
+
+    .especialidades-container {
+        .titulo-especialidades {
+            font-size: map-get($font-sizes, desktop-medium);
+        }
+    }
+
+    header {
+        .header-navbar-container {
+            .banner-container {
+                .titulo-inicio {
+                    font-size: map-get($font-sizes, desktop-large);
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .especialidades-container {
+        .comidas-especialidades-container {
+            .texto-especialidades {
+                position: relative;
+                left: 2%;
+            }
+        }
+    }
+
+    .especialidades-container {
+        .invertido {
+            .texto-especialidades-invertido {
+                position: relative;
+                right: 2%;
+            }
+        }
+    }
+}
+
+@media (min-width: 576px) {
+    .especialidades-container {
+        .comidas-especialidades-container {
+            @include flex-justify-align($f-direction: row, $justify-cnt: center, $align-itm: center);
+            margin-bottom: 30px;
+
+            .texto-especialidades {
+                text-align: start;
+            }
+        }
+
+        .invertido {
+            flex-direction: row-reverse;
+
+            .texto-especialidades-invertido {
+                text-align: start;
+
+                .titulo-comidas-especialidades-invertido {
+                    text-align: end;
+                    margin-right: 30px;
+                }
+            }
+        }
+    }
+
+    .calidad-container {
+
+        .titulo-calidad {
+            font-size: map-get($font-sizes, desktop-medium);
+            @include padding(10px, 40px);
+        }
+
+        & p {
+            font-size: map-get($font-sizes, large);
+            @include padding(10px, 40px);
+        }
+    }
+
+    footer {
+        .footer-container {
+            @include flex-justify-align ($f-direction: row);
+            height: 300px;
+        }
+    }
+
+    .texto-comidas-container {
+        .titulo-comidas-menu {
+            font-size: map-get($font-sizes, desktop-medium);
+        }
+
+        .subtitulo-comidas-menu {
+            font-size: map-get($font-sizes, desktop-small);
+        }
+    }
+}

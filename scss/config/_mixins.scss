@@ -1,0 +1,51 @@
+@import './vars';
+
+@mixin flex-justify-align ($f-direction: null, $justify-cnt: null, $align-itm: null) {
+    display: flex;
+    flex-direction: $f-direction;
+    justify-content: $justify-cnt;
+    align-items: $align-itm;
+}
+
+@mixin bg-cover-center {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+@mixin margin($top, $right: $top, $bottom: $top, $left: $right) {
+    margin: $top $right $bottom $left;
+}
+
+@mixin padding($top, $right: $top, $bottom: $top, $left: $right) {
+    padding: $top $right $bottom $left;
+}
+
+@mixin titulos-style {
+    font-family: $font-secondary;
+    font-weight: $font-weight-titulos;
+    font-style: $font-style-default;
+    font-size: map-get($font-sizes, titulo-medium);
+}
+
+@mixin subtitulos-style {
+    font-family: $font-secondary;
+    font-weight: $font-weight-titulos;
+    font-style: $font-style-default;
+    font-size: map-get($font-sizes, large);
+}
+
+@mixin titulo-comidas-style {
+    font-family: $font-secondary;
+    font-size: map-get($font-sizes, titulo-medium);
+}
+
+@mixin btn-style($color, $bg-color) {
+    color: $color;
+    background-color: $bg-color;
+}
+
+@mixin footer-items-style {
+    color: $negro;
+    font-family: $font-primary;
+}

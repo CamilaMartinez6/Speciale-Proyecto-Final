@@ -1,0 +1,82 @@
+@import '../config/vars';
+@import '../config/mixins';
+
+// header
+header {
+    @include bg-cover-center;
+    position: relative;
+    text-align: center;
+    @include padding(20px);
+
+    .navbar-collapse {
+        @include flex-justify-align($justify-cnt: center);
+    }
+
+    .header-navbar-container {
+        @include flex-justify-align($f-direction: column, $justify-cnt: center, $align-itm: center);
+
+        .logo-container {
+            @include flex-justify-align($justify-cnt: center, $align-itm: center);
+            transition: transform 0.3s ease;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+        .header-nav-items {
+            @include margin(0, auto);
+            color: $blanco-hueso;
+            font-family: $font-primary;
+
+            .nav-link {
+                color: $blanco-hueso;
+                font-family: $font-primary;
+
+                &:hover {
+                    color: $blanco;
+                }
+            }
+        }
+
+        .banner-container {
+            @include flex-justify-align($f-direction: column, $align-itm: center);
+            margin-top: 60px;
+
+            .titulo-inicio {
+                @include titulos-style;
+                color: $blanco;
+            }
+
+            .botones-banner-container {
+                @include flex-justify-align($justify-cnt: center);
+                font-family: $font-primary;
+                padding: 20px;
+
+                .btn-reservas {
+                    @include btn-style($blanco, $verde-oscuro);
+                    border-radius: 0%;
+                    margin: $margin-btn;
+                    transition: transform 0.3s ease;
+
+                    &:hover {
+                        transform: scale(1.1);
+                        background-color: $verde-claro;
+                    }
+                }
+
+                .btn-menu {
+                    @include btn-style($blanco, $rojo-oscuro);
+                    border-radius: 0%;
+                    margin: $margin-btn;
+                    transition: transform 0.3s ease;
+
+                    &:hover {
+                        transform: scale(1.1);
+                        background-color: $rojo-claro;
+                    }
+                }
+            }
+        }
+    }
+}
