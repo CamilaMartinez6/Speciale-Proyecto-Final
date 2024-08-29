@@ -9,7 +9,7 @@
 
 /*main index*/
 .nosotros-container {
-    padding: 30px;
+    padding: 60px;
 
     .titulo-nosotros {
         @include titulos-style;
@@ -38,7 +38,7 @@
 }
 
 .especialidades-container {
-    margin-bottom: 60px;
+    margin-bottom: 60px; 
 
     .titulo-especialidades {
         @include titulos-style;
@@ -87,6 +87,7 @@
         .texto-especialidades-invertido {
             text-align: center;
             margin-top: 20px;
+            margin-left: 50px;
 
             .titulo-comidas-especialidades-invertido {
                 @include titulo-comidas-style;

@@ -102,7 +102,7 @@ main {
 
 /*main index*/
 .nosotros-container {
-  padding: 30px;
+  padding: 60px;
 }
 .nosotros-container .titulo-nosotros {
   font-family: "Parisienne", cursive;
@@ -183,6 +183,7 @@ main {
 .especialidades-container .invertido .texto-especialidades-invertido {
   text-align: center;
   margin-top: 20px;
+  margin-left: 50px;
 }
 .especialidades-container .invertido .texto-especialidades-invertido .titulo-comidas-especialidades-invertido {
   font-family: "Parisienne", cursive;
